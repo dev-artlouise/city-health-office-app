@@ -1,0 +1,37 @@
+
+:root{
+    --main-color: #027581;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+*{
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+
+body{
+    padding:0;
+    margin:0;
+    min-height: 100vh;
+
+    /* for footer */
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer{
+    background-color: #333;
+    color:#fff;
+    padding: 3rem;
+    
+    /* push footer at the bottom*/
+    margin-top:auto;
+}
