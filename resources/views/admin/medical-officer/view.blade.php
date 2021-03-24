@@ -1,6 +1,13 @@
 @extends('layouts.app-admin')
 @section('admin-content')
 
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{{'/admin/medical-officer'}}">Medical Officers</a></li>
+            <li class="breadcrumb-item active" aria-current="page">View</li>
+        </ol>
+    </nav>
+
     <div class="container profile">
         <form method="post">
             <div class="row">

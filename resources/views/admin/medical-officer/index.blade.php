@@ -13,6 +13,12 @@
     </div>
 </header>
 
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Medical Officers</li>
+    </ol>
+</nav>
+
 <h2 class="dashboard-title">Overview for Medical Officers</h2>
 
 <div class="dashboard-cards">

@@ -105,6 +105,14 @@
         </div>
     </div> --}}
 
+   
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{'/admin/client'}}">Client</a></li>
+          <li class="breadcrumb-item active" aria-current="page">View</li>
+        </ol>
+    </nav>
+
     <div class="container profile">
         <h4>Client Information</h4>
         <form method="post">
@@ -229,5 +237,5 @@
 
         </form>           
     </div>
-    
+
 @endsection

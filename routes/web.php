@@ -1,6 +1,8 @@
 <?php
 
 use RealRashid\SweetAlert\Facades\Alert;
+
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ClientsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\MedicalOfficersController;
@@ -18,8 +20,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// clients page routes
-Route::get('/', [ClientsController::class, 'index']);
+//auth routes
+Route::get('/auth/login', [AuthController::class, 'index']);
+route::match(['get','post'],'/client/login',[ClientsController::class,'clientlogin']);
+
+//clients page routes
+Route::get('/client-request', [ClientsController::class, 'index']);
 Route::get('/about', [ClientsController::class, 'about']);
 
 //Admin routes
@@ -33,7 +39,7 @@ Route::get('/admin/medical-officer/view', [AdminController::class, 'viewMedicalO
 
 //Admin/client routes
 //need ste id aki na route kase single view ste
-Route::get('/admin/client/', [AdminController::class, 'indexClient']);
+Route::get('/admin/client', [AdminController::class, 'indexClient']);
 Route::get('/admin/client/view', [AdminController::class, 'viewClient']);
 
 //Admin/Archives routes

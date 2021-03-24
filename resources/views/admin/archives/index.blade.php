@@ -13,6 +13,12 @@
     </div>
 </header>
 
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active" aria-current="page">Archives</li>
+    </ol>
+</nav>
+
 <div container>
     <h2 class="dashboard-title">Archives</h2>
 

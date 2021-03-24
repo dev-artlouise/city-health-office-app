@@ -9,6 +9,9 @@
         <!--Bootstrap css-->
         <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 
+        <!--font-awesome-icons-->
+        <link rel="stylesheet" href="{{asset('css/all.min.css')}}">
+
         <!--Custom Css-->
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         
@@ -25,7 +28,7 @@
         </div>
 
         {{-- footer --}}
-        @include('includes.footer')
+        {{-- @include('includes.footer') --}}
 
         @include('sweetalert::alert')
 

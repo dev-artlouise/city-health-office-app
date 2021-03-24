@@ -1,9 +1,4 @@
-
-:root{
-    --main-color: #027581;
-    --color-dark: #1D2231;
-    --text-grey: #8390A2;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 *{
     text-decoration: none;
@@ -15,17 +10,25 @@ html{
     height: 100%;
 }
 
-
 body{
     padding:0;
     margin:0;
     min-height: 100vh;
-
+    font-family: 'Lato', sans-serif;
+    background:#fafafa ;
     /* for footer */
     display: flex;
     flex-direction: column;
 }
 
+.form-container{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    /* background: #fff; */
+    padding: 30px;
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 10px 0px rgb(102, 101, 101) ; */
+}
 
 footer{
     background-color: #333;

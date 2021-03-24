@@ -16,4 +16,8 @@ class ClientsController extends Controller
     {
         return view('client.about');
     }
+    public function clientlogin()
+    {
+        return view('auth.login');
+    }
 }
